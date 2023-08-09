@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Métodos de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff5733;
+        }
+
+        p {
+            text-align: center;
+            color: #f7430d;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #f7430d;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 20px;
+            background-color: #ff5733;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f7430d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Métodos de Pago</h1>
+        <p>Por favor, elige un método de pago:</p>
+        <form id="paymentForm">
+            <label>
+                <input type="radio" name="paymentMethod" value="creditCard" required>
+                Tarjeta de Crédito
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="paypal" required>
+                PayPal
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="cash" required>
+                Pago en Efectivo
+            </label>
+            <input type="submit" value="Continuar al Pago">
+        </form>
+    </div>
+</body>
+</html>

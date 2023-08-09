@@ -1,0 +1,119 @@
+/* inicio.css */
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: #8b0000; /* Color de fondo vino */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+    display: inline; /* Para acomodar los enlaces horizontalmente */
+  }
+  
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px; /* Espaciado interior para los enlaces */
+  }
+  
+  .navbar li a:hover {
+    color: yellow;
+  }
+  
+  /* Estilos para las secciones */
+  .section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para centrar el contenido verticalmente */
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    text-align: center; /* Para centrar el texto horizontalmente */
+  }
+  
+  .section:nth-child(odd) {
+    background-color: darkred;
+  }
+  
+  .section:nth-child(4n+2) {
+    background-color: orangered;
+  }
+  
+  .section:nth-child(4n+3) {
+    background-color: darkred;
+  }
+  
+  .section:nth-child(4n+4) {
+    background-color: orangered;
+  }
+  
+  /* Estilos para los títulos en las secciones */
+  .section h1 {
+    font-size: 3em;
+    font-weight: bold; /* Tipografía gruesa */
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Estilos para los párrafos en las secciones */
+  .section p {
+    font-size: 1.5em;
+    font-weight: bold; /* Tipografía gruesa */
+    opacity: 0;
+    max-width: 800px;
+    margin: 20px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Clase Custom-Style */
+  .custom-style .section p {
+    color: rgb(255, 201, 63);
+  }
+  
+  /* Clase Custom-Style2 */
+  .custom-style2 .section h1{
+    color: white;
+  }
+  
+  /* Estilos para las animaciones */
+  .animated {
+    opacity: 0;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

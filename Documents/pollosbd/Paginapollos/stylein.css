@@ -1,0 +1,22 @@
+.container {
+    height: 2000px; /* Altura suficiente para permitir deslizar la página */
+    position: relative;
+  }
+  
+  .circle {
+    position: absolute;
+    top: -50px; /* Posición inicial arriba de la página */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000; /* Color del círculo (puedes cambiarlo) */
+    border-radius: 50%;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease; /* Transición de opacidad suave */
+  }
+  
+  .circle.show {
+    opacity: 1; /* Mostrar el círculo al agregar la clase "show" */
+  }
+

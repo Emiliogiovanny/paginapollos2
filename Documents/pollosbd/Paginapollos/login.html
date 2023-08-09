@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar sesión</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Estilos para el contenedor que centra el formulario */
+            .contenedor-formulario {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50vh; /* Altura de la ventana visible */
+            }
+            
+            /* Estilos para el formulario */
+            form {
+                width: 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+            }
+            
+            .centrar-h1 {
+            text-align: center;
+        }
+        </style>        
+        
+    </head>    
+
+<body>
+    
+    <h1 class="centrar-h1">Iniciar sesión</h1>
+    <div class="contenedor-formulario">
+    <form action="iniciaSesion.php" method="post" >
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        
+        <input type="submit" value="Iniciar sesión">
+    </form>
+</div>
+
+</body>
+</html>
